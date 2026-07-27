@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tanya Pozharova Portfolio</title>
+    <meta
+      name="description"
+      content="Портфолио Tanya Pozharova: senior product designer, design system lead, UX/UI designer."
+    />
+    <link rel="icon" href="./assets/fav.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="#about">обо мне</a>
+        <a href="#works">ux/ui</a>
+        <a href="#flows">user flow</a>
+        <a href="#system">design system</a>
+        <a href="#contact">контакты</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section id="top" class="hero">
+        <div class="hero-media">
+          <div class="hero-parallax-scene" aria-label="Tanya Pozharova portfolio banner">
+            <div class="hero-layer-pair">
+              <img class="hero-layer hero-layer-base" src="./assets/hero-layer-1.webp" alt="" aria-hidden="true" />
+              <img class="hero-layer hero-layer-mid" src="./assets/hero-layer-2.webp" alt="" aria-hidden="true" />
+              <img class="hero-layer hero-layer-front" src="./assets/hero-layer-3.webp" alt="Tanya Pozharova portfolio banner" />
+            </div>
+            <img class="hero-layer hero-layer-overlay" src="./assets/hero-layer-4.webp" alt="" aria-hidden="true" />
+          </div>
+          <picture class="hero-static">
+            <source media="(max-width: 800px)" srcset="./assets/banner-mobile.webp" />
+            <source media="(max-width: 1200px)" srcset="./assets/banner-tablet.webp" />
+            <img src="./assets/banner-tablet.webp" alt="Tanya Pozharova portfolio banner" />
+          </picture>
+        </div>
+      </section>
+
+      <section id="about" class="about-section full-bleed">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./assets/about-mobile.svg" />
+          <source media="(max-width: 1200px)" srcset="./assets/about-tablet.svg" />
+          <img src="./assets/about-desktop.svg" alt="About Tanya Pozharova" />
+        </picture>
+      </section>
+
+      <section class="illustration-section">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./assets/mob_ill.svg" />
+          <source media="(max-width: 1200px)" srcset="./assets/tab_ill.svg" />
+          <img src="./assets/illustration-block.svg" alt="" />
+        </picture>
+      </section>
+
+      <section id="works" class="portfolio-section full-bleed">
+        <div class="portfolio-slider portfolio-slider-desktop" data-slider>
+          <div class="portfolio-visual">
+            <img id="portfolio-image-base" class="portfolio-image portfolio-image-base" src="./assets/project-1-desktop.svg" alt="Project 1" />
+            <img id="portfolio-image-overlay" class="portfolio-image portfolio-image-overlay" src="" alt="" aria-hidden="true" />
+            <div class="portfolio-hotspots" aria-hidden="true">
+              <button class="portfolio-hitbox portfolio-prev" type="button" aria-label="Предыдущий проект"></button>
+              <button class="portfolio-hitbox portfolio-next" type="button" aria-label="Следующий проект"></button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-strip" aria-label="Projects">
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-1-mobile.svg" /><img src="./assets/project-1-tablet.svg" alt="Проект 1" /></picture></article>
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-2-mobile.svg" /><img src="./assets/project-2-tablet.svg" alt="Проект 2" /></picture></article>
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-3-mobile.svg" /><img src="./assets/project-3-tablet.svg" alt="Проект 3" /></picture></article>
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-4-mobile.svg" /><img src="./assets/project-4-tablet.svg" alt="Проект 4" /></picture></article>
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-5-mobile.svg" /><img src="./assets/project-5-tablet.svg" alt="Проект 5" /></picture></article>
+          <article class="portfolio-strip-slide"><picture><source media="(max-width: 800px)" srcset="./assets/project-6-mobile.svg" /><img src="./assets/project-6-tablet.svg" alt="Проект 6" /></picture></article>
+        </div>
+      </section>
+
+      <section id="flows" class="diagram-section full-bleed">
+        <div class="diagram-visual">
+          <picture>
+            <source media="(max-width: 1200px)" srcset="./assets/user-flow-full.svg" />
+            <img src="./assets/user-flow-full.svg" alt="User flow diagram" />
+          </picture>
+        </div>
+      </section>
+
+      <section id="system" class="diagram-section system-section full-bleed">
+        <div class="diagram-visual">
+          <picture>
+            <source media="(max-width: 1200px)" srcset="./assets/design-system-full.svg" />
+            <img src="./assets/design-system-full.svg" alt="Design system board" />
+          </picture>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section full-bleed">
+        <div class="contact-visual">
+          <picture>
+            <source media="(max-width: 800px)" srcset="./assets/contacts-mobile.svg" />
+            <source media="(max-width: 1200px)" srcset="./assets/contacts-tablet.svg" />
+            <img src="./assets/contacts-desktop.svg" alt="Contact" />
+          </picture>
+          <a class="contact-hitbox" href="https://t.me/tanyapozhar" target="_blank" rel="noreferrer" aria-label="Написать в Telegram @tanyapozhar"></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
